@@ -161,7 +161,7 @@ local function PerformAttackEntity( eyePos, target, lastSeenPos, bot, brain, mov
         end
         
         
-        doFire = doFire and bot.aim:UpdateAim(target, aimPos)
+        doFire = doFire and bot.aim:UpdateAim(target, aimPos , kBotAccWeaponGroup.Bullets)
         
     end
 

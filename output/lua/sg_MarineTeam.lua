@@ -87,7 +87,7 @@ function MarineTeam:InitTechTree()
 
     self.techTree:AddResearchNode(kTechId.CombatBuilderTech,            kTechId.Armory)
     self.techTree:AddTargetedBuyNode(kTechId.CombatBuilder,   kTechId.CombatBuilderTech,       kTechId.None)
-    
+    self.techTree:AddTargetedActivation(kTechId.DropCombatBuilder,          kTechId.CombatBuilderTech)
     
     self.techTree:AddResearchNode(kTechId.GrenadeTech,           kTechId.Armory)
     self.techTree:AddTargetedBuyNode(kTechId.ClusterGrenade,          kTechId.Armory,        kTechId.None)
@@ -96,7 +96,6 @@ function MarineTeam:InitTechTree()
     self.techTree:AddTargetedBuyNode(kTechId.PulseGrenade,       kTechId.Armory, kTechId.GrenadeTech)
 
     self.techTree:AddTargetedBuyNode(kTechId.Welder,          kTechId.Armory,        kTechId.None)
-    --self.techTree:AddTargetedBuyNode(kTechId.CombatBuilder,   kTechId.Armory,       kTechId.None)
     self.techTree:AddTargetedActivation(kTechId.DropWelder,   kTechId.Armory,        kTechId.None)
 
     -- Door actions
@@ -127,6 +126,7 @@ function MarineTeam:InitTechTree()
     self.techTree:AddResearchNode(kTechId.DragonBreath, kTechId.StandardSupply)
     self.techTree:AddResearchNode(kTechId.LightMachineGunUpgrade,  kTechId.StandardSupply)
     self.techTree:AddResearchNode(kTechId.CannonTech,   kTechId.StandardSupply,     kTechId.LightMachineGunUpgrade)
+    self.techTree:AddTargetedActivation(kTechId.DropCannon,          kTechId.CannonTech)
     
     self.techTree:AddBuyNode(kTechId.LightMachineGun,               kTechId.LightMachineGunUpgrade)
     self.techTree:AddBuyNode(kTechId.Cannon,                        kTechId.CannonTech)
@@ -150,7 +150,9 @@ function MarineTeam:InitTechTree()
 
     -- Exosuit
     self.techTree:AddResearchNode(kTechId.ExosuitTech,           kTechId.PrototypeLab, kTechId.None)
-    self.techTree:AddTargetedActivation(kTechId.DropExosuit,     kTechId.ExosuitTech, kTechId.None)
+    --self.techTree:AddTargetedActivation(kTechId.DropExosuit,     kTechId.ExosuitTech, kTechId.None)
+    self.techTree:AddTargetedActivation(kTechId.DropDualRailgunExosuit,     kTechId.ExosuitTech, kTechId.None)
+    self.techTree:AddTargetedActivation(kTechId.DropDualMinigunExosuit,     kTechId.ExosuitTech, kTechId.None)
     self.techTree:AddBuyNode(kTechId.DualMinigunExosuit, kTechId.ExosuitTech, kTechId.None)
     self.techTree:AddBuyNode(kTechId.DualRailgunExosuit, kTechId.ExosuitTech, kTechId.None)
 
