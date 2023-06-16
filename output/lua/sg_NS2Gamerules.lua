@@ -3,6 +3,7 @@
 --	ZycaR (c) 2016
 --
 
+
 NS2Gamerules.kFrontDoorSound = PrecacheAsset("sound/siegeroom.fev/door/frontdoor")
 NS2Gamerules.kSiegeDoorSound = PrecacheAsset("sound/siegeroom.fev/door/siege")
 NS2Gamerules.kSuddenDeathSound = PrecacheAsset("sound/siegeroom.fev/door/SD")
@@ -29,6 +30,10 @@ function NS2Gamerules:OnInitialized()
     kPlayingTeamInitialTeamRes = self.StartingTeamRes or kPlayingTeamInitialTeamRes
     kMarineInitialIndivRes = self.StartingPlayerRes or kMarineInitialIndivRes
     kAlienInitialIndivRes = self.StartingPlayerRes or kAlienInitialIndivRes
+   
+    --Shared.ConsoleCommand("cheats 1")
+    --Shared.ConsoleCommand("alltech")
+    --Shared.ConsoleCommand("cheats 0")
 	
 end
 
@@ -114,6 +119,7 @@ if Server then
         if not self.frontDoors and self:GetFrontDoorsOpen() then
             self:OpenFuncDoors(kFrontDoorType, NS2Gamerules.kFrontDoorSound)
             self.frontDoors = true
+            
         end
 
         if not self.siegeDoors and self:GetSiegeDoorsOpen() then

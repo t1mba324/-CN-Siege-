@@ -4,13 +4,15 @@
 --
 
 -- increase contamination cooldown significanlty ... because siege is about turtling!
-kContaminationCooldown = 60
+kContaminationCooldown = 30
 kContaminationLifeSpan = 60
 kContaminationBileSpewCount = 1
 
 --adjustments for NS2.0 for advanced xenocide in siege 
-kXenocideFuelDamage = 120
-kXenocideFuelRange = 10.5
+kXenocideFuelDamage = 110
+kXenocideFuelRange = 10
+kXenocideDamage = 100   --200
+kXenocideRange = 9  -- 14
 
 --decrease alien's cost and gestate time
 kGorgeCost = 8
@@ -35,32 +37,47 @@ kFadeGestateTime = 1
 kOnosGestateTime = 1
 
 --enhance the umbra ability
-kUmbraEnergyCost = 27
+kUmbraEnergyCost = 25
 kUmbraMaxRange = 20
-kUmbraDuration = 4.5
+kUmbraDuration = 5
 kUmbraRadius = 5
 
-kUmbraShotgunModifier = 0.7
-kUmbraBulletModifier = 0.7
-kUmbraMinigunModifier = 0.7
-kUmbraRailgunModifier = 0.7
+kUmbraShotgunModifier = 0.6
+kUmbraBulletModifier = 0.6
+kUmbraMinigunModifier = 0.6
+kUmbraRailgunModifier = 0.6
 
 --Enhance the bilebomb
-kBileBombDamage = 60 -- per second
+kBileBombDamage = 55 -- per second from 55
 kBileBombDamageType = kDamageType.Corrode
-kBileBombEnergyCost = 20
+kBileBombEnergyCost = 10
 kBileBombDuration = 5
     -- 200 inches in NS1 = 5 meters
 kBileBombSplashRadius = 7.5
 kBileBombDotInterval = 0.4
 
 --enhance the welder's rate
-kAdvancedWeldingResearchCost=25
-kAdvancedWeldingResearchTime=70
+--kAdvancedWeldingResearchCost=25
+--kAdvancedWeldingResearchTime=70
 
 --AntiJetpack
-kAntiStompJetpackTechResearchCost=20
-kAntiStompJetpackTechResearchTime=60
-kAntiStompNeedFuel=0.4
-kDisruptAntiStompJetpackerTime=0.3
+--kAntiStompJetpackTechResearchCost=20
+--kAntiStompJetpackTechResearchTime=60
+--kAntiStompNeedFuel=0.4
+--kDisruptAntiStompJetpackerTime=0.3
 
+--enhance skulk's ability
+kLeapEnergyCost = 25    --from 45
+
+-- SPAWN TIMES
+kMarineRespawnTime = 9 --from 9
+
+kAlienSpawnTime = 10    --from 10
+kEggGenerationRate = 13 --from 13
+kAlienEggsPerHive = 2   --from 2
+
+--protolab adjustments
+kPrototypeLabBuildTime = 12 --from 20
+
+
+kMinigunDamage = 6.5 --from 6

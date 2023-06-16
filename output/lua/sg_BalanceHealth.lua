@@ -11,4 +11,8 @@ kLerkArmorFullyUpgradedAmount = 65
 kFadeArmorFullyUpgradedAmount = 160
 kOnosArmorFullyUpgradedAmount = 650
 
-kPrototypeLabHealth = 2500   kPrototypeLabArmor = 400
+kPrototypeLabHealth = 2000   kPrototypeLabArmor = 200   --from 3000 and 500
+
+kArmoryHealth = 1500   kArmoryArmor = 200 --from 1500 and 200
+
+kExosuitArmor = 370 --from 320
