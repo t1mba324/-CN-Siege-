@@ -54,7 +54,7 @@ ModLoader.SetupFileHook( "lua/bots/CommonActions.lua", "lua/bots/sg_CommonAction
 --ModLoader.SetupFileHook( "lua/bots/MarineBrain_Data.lua", "lua/bots/sg_MarineBrain_Data.lua" , "replace" )
 --ModLoader.SetupFileHook( "lua/bots/SkulkBrain_Data.lua", "lua/bots/sg_SkulkBrain_Data.lua" , "replace" )
 --ModLoader.SetupFileHook( "lua/bots/GorgeBrain_Data.lua", "lua/bots/sg_GorgeBrain_Data.lua" , "replace" )
-ModLoader.SetupFileHook( "lua/bots/BotMotion.lua", "lua/bots/sg_BotMotion.lua" , "replace" )
+--ModLoader.SetupFileHook( "lua/bots/BotMotion.lua", "lua/bots/sg_BotMotion.lua" , "replace" )
 
 --updated by cn community:
 --alien health value adjustments
@@ -63,29 +63,31 @@ ModLoader.SetupFileHook( "lua/BalanceHealth.lua", "lua/sg_BalanceHealth.lua" , "
 ModLoader.SetupFileHook( "lua/bots/CommonAlienActions.lua", "lua/sg_CommonAlienActions.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Drifter.lua", "lua/sg_Drifter.lua" , "post" )
 
---unlock the Armory's tech branch
-ModLoader.SetupFileHook( "lua/Armory.lua", "lua/sg_Armory.lua" , "post" )
 
---add advanced welder tech
-ModLoader.SetupFileHook( "lua/MarineTeam.lua", "lua/sg_MarineTeam.lua" , "post" )
-ModLoader.SetupFileHook( "lua/MarineTechMap.lua", "lua/sg_MarineTechMap.lua" , "post" )
-ModLoader.SetupFileHook( "lua/PlayingTeam.lua", "lua/sg_PlayingTeam.lua" , "post" )
-ModLoader.SetupFileHook( "lua/TechTreeButtons.lua", "lua/sg_TechTreeButtons.lua" , "post" )
-ModLoader.SetupFileHook( "lua/TechTreeConstants.lua", "lua/sg_TechTreeConstants.lua" , "post" )
-ModLoader.SetupFileHook( "lua/Weapons/Marine/Welder.lua", "lua/sg_Welder.lua" , "post" )
 ModLoader.SetupFileHook( "lua/BalanceMisc.lua", "lua/sg_BalanceMisc.lua" , "post" )
 --diasblead,unable to load the right animation
 --ModLoader.SetupFileHook( "lua/MarineWeaponEffects.lua", "lua/Effects/sg_MarineWeaponEffects.lua" , "post" )
-ModLoader.SetupFileHook( "lua/TeamInfo.lua", "lua/sg_TeamInfo.lua" , "post" )
 
 --Modify the judgment of placing tunnels
 ModLoader.SetupFileHook( "lua/BuildUtility.lua", "lua/sg_BuildUtility.lua" , "post" )
 
---antistomp_jetpackers
-ModLoader.SetupFileHook( "lua/JetpackMarine.lua", "lua/sg_JetpackMarine.lua" , "post" )
-ModLoader.SetupFileHook( "lua/Weapons/Alien/Shockwave.lua","lua/sg_Shockwave.lua","post")
-ModLoader.SetupFileHook( "lua/PrototypeLab.lua","lua/sg_PrototypeLab.lua","post")
 
+--unlock the Armory's tech branch
+--ModLoader.SetupFileHook( "lua/Armory.lua", "lua/sg_Armory.lua" , "post" )
+--antistomp_jetpackers
+--ModLoader.SetupFileHook( "lua/JetpackMarine.lua", "lua/sg_JetpackMarine.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/Weapons/Alien/Shockwave.lua","lua/sg_Shockwave.lua","post")
+--ModLoader.SetupFileHook( "lua/PrototypeLab.lua","lua/sg_PrototypeLab.lua","post")
+
+--add advanced welder tech
+--ModLoader.SetupFileHook( "lua/MarineTeam.lua", "lua/sg_MarineTeam.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/MarineTechMap.lua", "lua/sg_MarineTechMap.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/PlayingTeam.lua", "lua/sg_PlayingTeam.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/TechTreeButtons.lua", "lua/sg_TechTreeButtons.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/TechTreeConstants.lua", "lua/sg_TechTreeConstants.lua" , "post" )
+--ModLoader.SetupFileHook( "lua/TeamInfo.lua", "lua/sg_TeamInfo.lua" , "post" )
+
+--ModLoader.SetupFileHook( "lua/Weapons/Marine/Welder.lua", "lua/sg_Welder.lua" , "post" )
 --skulk ability changes
 ModLoader.SetupFileHook( "lua/Skulk.lua","lua/sg_Skulk.lua","post")
 
